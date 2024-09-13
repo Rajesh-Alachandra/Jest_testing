@@ -1,6 +1,6 @@
 const request = require('supertest');
 const express = require('express');
-const app = require('./index'); // Assuming the server is exported in index.js
+const app = require('./server'); // Assuming the server is exported in index.js
 
 describe('POST /api/contact', () => {
     it('should save contact and send an email', async () => {
